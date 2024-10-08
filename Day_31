@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>operators</h1>
+    <p>
+        arithmetic operators
+    </p>
+    <script>
+        let a=30;
+        let b=20;
+        let c=a+b;
+        let d=a-b;
+        let e=a*b;
+        let f=a/b;
+        let g=a%b;
+        let h=a++;
+        let i=a--;
+
+        document.write('addition operator'+c+"<br>");
+        document.write("<br>");
+        document.write('Subtraction Operator'+d+"<br>");
+        document.write("<br>");
+        document.write(' Multiplication Operator'+e+"<br>");
+        document.write("<br>");
+        document.write('Division Operator'+f+"<br>");
+        document.write("<br>");
+        document.write('Remainder Operator'+g+"<br>");
+        document.write("<br>");
+        document.write('increment Operator'+h+"<br>");
+        document.write("<br>");
+        document.write('decrement Operator'+i+"<br>");
+</script>
+    <script>
+        document.write("<br>");
+        let x=7;
+        let y=4;
+        document.write(x==y);
+        document.write("<br>");
+        document.write(x!=y);
+        document.write("<br>");
+        document.write(x===y);
+        document.write("<br>");
+        document.write(x+y);
+        document.write("<br>");
+        document.write(x!==y);
+        document.write("<br>");
+        document.write(x>y);
+        document.write("<br>");
+</script>
+
+    <script>
+        document.write("<br>");
+        let s=15;
+        let t=20;
+        document.write(s>15 || t>20)
+        document.write("<br>");
+</script>
+
+    <script>
+        document.write("<br>");
+        let n=3;
+        let v=2;
+         v+=n;
+         //v=v+n
+        document.write(v);
+        document.write("<br>");
+    </script>
+
+    <script>
+        document.write("<br>");
+        let p=10;
+        let k=5;
+        document.write(p>10 ?   true : false);
+ </script>
+ 
+</body>
+</html>
