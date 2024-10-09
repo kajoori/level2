@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Type</h1>
+    <script>
+        let a=21;
+        let b="two";
+        document.write(typeof a);
+        document.write("<br>")
+        document.write(typeof b);
+    </script>
+    <br/>
+    <script>
+        document.write("<br>");
+        let c="one";
+        let d="5";
+        let e="10";
+        document.write(parseInt(b)+parseInt(c));
+    </script>
+     <br/>
+     <hr>
+    <h1>coalescing</h1>
+
+    <script>
+        document.write("<br>");
+        //coalescing
+        //x ?? y
+        let x=10;
+        let y;
+        y=y ?? 2;
+      // document.write(x ?? 5);
+       document.write(x/y);
+    </script>
+    <br>
+    <hr>
+     <h1>If else</h1>
+     <script>
+     let kaju=true;
+        if(!kaju){
+            document.write("kayu ready to give presentation by tomorrow")
+        } 
+        else{
+            document.write("she is not")
+        }
+     </script>
+     <br>
+    
+    <script> 
+        document.write("<br>");
+        let kayu=20;
+        if (kayu>70 ) {
+        document.write("kayu is above 70");}
+        else if(kayu<70 && kayu > 50){
+            document.write(" kayu in second stage")
+        }
+       else {
+        document.write("kayu in third stage")
+       }
+       document.write("<br>");
+       document.write("after if condition")
+    </script>
+<br>
+<hr>
+<h1>Forloop</h1>
+<h3>1</h3>
+<script>
+    let flowers =["Rose","Lotus","Sunflower"];
+    for (let n = 0; n < flowers.length; n++) {
+         document.write(flowers[n] + "<br>");
+ }
+          
+</script>
+<h3>2</h3>
+<script>
+   let colours =["Black","Pink","Green"];
+   for (let m = 0; m < colours.length; m++){
+       document.write(colours[m] + "<br>")
+   }
+</script>
+   
+</body>
+</html>
