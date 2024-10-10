@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kayu</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(235, 135, 190);
+        text-align: center;
+        padding: 50px;
+    }
+
+    h1 {
+        color: rgb(1, 1, 83);
+    }
+
+    input {
+        width: 80px;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid rgb(235, 84, 74);
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 15px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: rgb(195, 0, 255);
+        color: white;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: rgb(21, 21, 94);
+    }
+
+    h2 {
+        color: rgb(32, 7, 172);
+        margin-top: 20px;
+    }
+
+    #result {
+        font-weight: bold;
+        color: rgb(0, 47, 255);
+    }
+</style>
+<body>
+    <h1>Calculator</h1>
+    
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    
+    <br><br>
+   <button id="plus" onclick="add()">+</button>
+   <button id="minus" onclick="subtract()">-</button>
+   <button  onclick="multiply()">×</button>
+    <button onclick="divide()">÷</button>
+    <h2>Result: <span id="kayu">0</span></h2>
+   <script>
+     function add() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            document.getElementById('kayu').innerText = num1 + num2;
+        }
+
+        function subtract() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            document.getElementById('kayu').innerText = num1 - num2;
+        }
+
+        function multiply() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            document.getElementById('kayu').innerText = num1 * num2;
+        }
+
+        function divide() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            document.getElementById('kayu').innerText = num2 !== 0 ? num1 / num2 : 'Cannot divide by zero';
+        }
+    
+        
+   </script>
+    
+</body>
+</html>
